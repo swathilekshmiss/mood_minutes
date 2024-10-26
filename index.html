@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Alarm Clock in JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+    <div class="input-row">
+            <div class="input-field">
+                <label for="alarmDate">
+                </label>
+                <input type="date"
+                    id="alarmDate"
+                    class="alarm-input"
+                    min="">
+            </div> 
+      <h1><center>00:00:00 PM</center></h1>
+      <div class="content">
+      <div class="column"
+            </div>
+          <select>
+            <option value="Hours" selected disabled hidden>Hour</option>
+          </select>
+        </div>
+        <div class="column">
+          <select>
+            <option value="Minute" selected disabled hidden>Minute</option>
+          </select>
+        </div>
+        <div class="column">
+          <select>
+            <option value="AM/PM" selected disabled hidden>AM/PM</option>
+          </select>
+        </div>
+      </div>
+      <button>Set Alarm</button>
+    </div>
+    <div id = "liste">
+    <div hidden id="ligne">
+      <input checked type="checkbox" id="cb"/>
+      <input type="number" placeholder="Hours" name="h" id="h"/>
+      <input type="number" placeholder="Minutes" name="m" id="m"/>
+      <input type="text" name="desc" placeholder="wake up call " id="desc"/>
+
+      <select id="son"/>
+        <option value="alm.mp3" id="son1">Dream</option>
+        <option value="Classic.mp3" id="son2">Classic</option>
+        <option value="Dubstep.mp3" id="son3">Dubstep</option>
+      </select>
+      <audio controls loop id="music" src = "alm.mp3"></audio>
+      <button id="del">DELETE</button>
+      </div>
+  <div>
+    <button id="plus">ADD</button>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+     </div>
+         <script src="script.js"></script>  
+  </body>
+</html>
